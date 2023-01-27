@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "Id": "app1",
+      "Who": "applicant",
+      "What": "Write application",
+      "When": "01/05/2023"
+    },
+    {
+      "Id": "sup1",
+      "Who": "supervisor",
+      "What": "Review application",
+      "When": "01/15/2023",
+      "DependsOn": "app1"
+    },
+    {
+      "Id": "app2",
+      "Who": "applicant",
+      "What": "Interview",
+      "When": "02/03/2023",
+      "DependsOn": "sup1"
+    },
+    {
+      "Id": "sup2",
+      "Who": "supervisor",
+      "What": "Interview",
+      "When": "02/03/2023",
+      "DependsOn": "sup1"
+    },
+    {
+      "Id": "sup3",
+      "Who": "supervisor",
+      "What": "Communicate decision",
+      "When": "02/14/2023",
+      "DependsOn": "sup2"
+    },
+    {
+      "Id": "app3",
+      "Who": "applicant",
+      "What": "1st day of work",
+      "When": "03/01/2023",
+      "DependsOn": "sup3"
+    }
+  ]
+}
